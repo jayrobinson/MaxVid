@@ -1,0 +1,37 @@
+<!--
+Global HTML Page to control the extension logic.
+-->
+<!DOCTYPE HTML>
+
+<script>
+
+var  i = 0;
+
+// Function to perform when event is received
+function performCommand(event) {
+	// Make sure event comes from the button
+    if (event.command == "maximize-video") {
+        event.target.browserWindow.activeTab.page.dispatchMessage("maximize", i);
+
+        i++;
+    }
+}
+
+function validateCommand(event) {
+    if (event.command === "maximize-video") {
+        event.target.disabled = !event.target.browserWindow.activeTab.url;
+    }
+}
+
+function handleMessage(event) {
+    if (event.name == "maximize-reset") {
+        i = 0;
+    }
+}
+
+// Set up the Listener
+safari.application.addEventListener("command", performCommand, false);
+safari.application.addEventListener("validate", validateCommand, false);
+safari.application.addEventListener("message", handleMessage, false);
+
+</script>

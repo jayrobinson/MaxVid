@@ -1,0 +1,87 @@
+/* MAXVIDEO */
+
+html.maxvid * { padding: 0 !important; margin: 0 !important; }
+
+html.maxvid,
+html.maxvid body,
+html.maxvid body #page, /* YouTube */
+html.maxvid body #page #content-container,
+html.maxvid body #page #content-container #content,
+html.maxvid body #page #content-container #content #watch-container,
+html.maxvid body #page #content-container #content #watch-container #watch-video-container,
+html.maxvid body #page #content-container #content #watch-container #watch-video-container #watch-video,
+html.maxvid body #page #content-container #content #watch-container #watch-video-container #watch-video #watch-player.flash-player,
+html.maxvid body #page #content-container #content #watch-container #watch-video-container #watch-video #watch-player.flash-player object,
+html.maxvid body #page #content-container #content #watch-container #watch-video-container #watch-video #watch-player.flash-player embed,
+html.maxvid body #everything, /* Vimeo, Old Site */
+html.maxvid body #everything #main.main,
+html.maxvid body #everything #main.main #meat,
+html.maxvid body #everything #main.main #meat .video_container_hd,
+html.maxvid body #everything #main.main #meat .video_container_hd .video,
+html.maxvid body #everything #main.main #meat .video_container_hd .video .vimeo_holder,
+html.maxvid body #everything #main.main #meat .video_container_hd .video .vimeo_holder .f.player,
+html.maxvid body #everything #main.main #meat .video_container_hd .video .vimeo_holder .f.player .by,
+html.maxvid body #everything #main.main #meat .video_container_hd .video .vimeo_holder .f.player .by object,
+html.maxvid body #wrap, /* Vimeo, New Site */
+html.maxvid body #wrap #main,
+html.maxvid body #wrap #main #content,
+html.maxvid body #wrap #main #content #cols,
+html.maxvid body #wrap #main #content #cols #clip,
+html.maxvid body #wrap #main #content #cols #clip #video,
+html.maxvid body #wrap #main #content #cols #clip #video .vimeo_holder,
+html.maxvid body #wrap #main #content #cols #clip #video .vimeo_holder .f.player,
+html.maxvid body #wrap #main #content #cols #clip #video .vimeo_holder .f.player .by,
+html.maxvid body #wrap #main #content #cols #clip #video .vimeo_holder .f.player .by object {
+    display: block !important;
+}
+
+html.maxvid #ribbon, /* Vimeo, New Site */
+html.maxvid header#site_header,
+html.maxvid header#site_header * {
+    height: 0 !important;
+    width: 0 !important;
+    visibility: hidden !important;
+}
+
+html.maxvid #masthead-expanded-acct-sw-container, /* YouTube */
+html.maxvid #masthead-container,
+html.maxvid #watch-headline-container,
+html.maxvid #brozar_toggle /* Vimeo, New Site */ {
+    display: none !important;
+}
+
+html.maxvid,
+html.maxvid body,
+html.maxvid body #page #watch-video-container, /* YouTube */
+html.maxvid body #page #watch-video,
+html.maxvid body #page #watch-video #watch-player,
+html.maxvid body #everything, /* Vimeo, Old Site */
+html.maxvid body #everything #main.main,
+html.maxvid body #everything #meat,
+html.maxvid body #everything .video_container_hd,
+html.maxvid body #everything .video,
+html.maxvid body #everything .vimeo_holder,
+html.maxvid body #everything .f.player,
+html.maxvid body #everything .by,
+html.maxvid body #everything object,
+html.maxvid body #wrap, /* Vimeo, New Site */
+html.maxvid body #wrap #main,
+html.maxvid body #wrap #content,
+html.maxvid body #wrap #cols,
+html.maxvid body #wrap #clip,
+html.maxvid body #wrap #video,
+html.maxvid body #wrap .vimeo_holder,
+html.maxvid body #wrap .f.player,
+html.maxvid body #wrap .by,
+html.maxvid body #wrap object {
+    display: block !important;
+    margin:0 !important;
+    padding:0 !important;
+        top: 0 !important;
+        right:0 !important;
+        bottom:0 !important;
+        left:0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: 9999999999999 !important;
+}
